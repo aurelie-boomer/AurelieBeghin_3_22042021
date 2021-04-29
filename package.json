@@ -1,0 +1,21 @@
+{
+  "name": "aureliebeghin_3_22042021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss css/style.css --style compressed" ,
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelie-boomer/AurelieBeghin_3_22042021.git"
+  },
+  "author": "aurelie beghin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurelie-boomer/AurelieBeghin_3_22042021/issues"
+  },
+  "homepage": "https://github.com/aurelie-boomer/AurelieBeghin_3_22042021#readme"
+}
+

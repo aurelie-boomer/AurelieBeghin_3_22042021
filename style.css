@@ -1,0 +1,147 @@
+body{
+    margin:0;
+    font-family:Roboto;
+}
+img{
+    max-width:100%;
+    object-fit:cover;
+}
+a{
+    text-decoration:none;
+    color:$color-lien;
+}
+
+
+form{
+    display:flex;
+    justify-content:center;
+    background-color: rgb(234, 234, 234);
+    padding: 1rem 0 1rem 2rem;
+    
+}
+.fa-map-marker-alt{
+    margin-right:1.3rem;
+}
+input{
+    background-color: rgb(234, 234, 234);
+    border:none;
+}
+.input::placeholder{
+    color: black;
+
+}
+.presentation{
+    background-color: rgb(246, 246, 246);
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.presentation__titre{
+    font-weight:bold;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+.presentation__reservation{
+    margin-bottom: 2rem;
+    color: rgb(137, 137, 137);
+    margin-top: 0;
+}
+.presentation__btn{
+    color: white;
+    background: linear-gradient(166deg, #FF79DA, #9356DC);
+    border: none;
+    border-radius: 1.6rem;
+    padding: 1rem;
+    margin:1rem 4.5rem 3.5rem 4.5rem;
+}
+.fonctionnement{
+    padding: 1.5rem 0.5rem 2rem 1.5rem;
+}
+.fonctionnement__titre{
+    margin-bottom:1rem;
+}
+.fonctionnement__liste{
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.fonctionnement__puce{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*border: rgba(217, 217, 217) solid 2px;*/
+    background-color: rgb(246, 246, 246);
+    box-shadow: 2px 2px 5px #eaeaea;
+    border-radius: 1rem; 
+    margin:0.5rem 1rem 1rem 1rem;
+    padding:0.5rem 4rem 0.5rem 0rem;
+}
+.fonctionnement__puce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:1.8rem;
+    margin-right:1.5rem;
+    background-color:#9356DC;
+    color:white;
+    font-size:small;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.3rem;
+}
+ol .fas{
+    margin-right:1.5rem;
+    margin-left: 2rem;
+    color:#7e7e7e;
+}
+.restaurant{
+    background-color: rgb(246, 246, 246);
+    display:flex;
+    flex-direction:column;
+}
+.restaurant__titre{
+    padding-left:1.3rem;
+    padding-top:2rem;
+}
+.restaurant__carte{   /*cartes menu ou laisser article sans classe??*/
+    background-color:white;
+    width:90%;
+    margin:auto;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    /*border: rgba(246, 246, 246) solid 1.5px;*/
+    box-shadow: 2px 2px 5px #C0C0C0;
+}
+.restaurant__etiquette{
+    position:absolute;
+    right:2rem;
+    top:60rem;    /*mais où est la deuxième div??*/
+    background-color: #99E2D0;
+    color: #00825f;
+    padding: 0.3rem 0.7rem;
+}
+.restaurant__nom{
+    margin:0;
+    padding-bottom:0.3rem;
+}
+.restaurant__ville{
+    margin:0;
+}
+.restaurant__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant__presentation{
+    padding:0.8rem 0rem 1rem 0.8rem;
+}
+.fa-heart{
+    padding-right:2rem;
+    color: #5c5c5c;
+    padding-top: 1rem;
+    font-size: xx-large;
+}
+

@@ -1,0 +1,18 @@
+.restaurant{
+    background-color:white;
+    width:90%;
+    margin:auto;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    /*border: rgba(246, 246, 246) solid 1.5px;*/
+    box-shadow: 2px 2px 5px #C0C0C0;
+      &__etiquette{
+       position:absolute;
+       right:2rem;
+       top:60rem;    /*mais où est la deuxième div??*/
+       background-color: #99E2D0;
+       color: #00825f;
+       padding: 0.3rem 0.7rem; 
+    }
+}
