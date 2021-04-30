@@ -1,18 +1,48 @@
 .restaurant{
-    background-color:white;
-    width:90%;
+    background-color:$color-background;
     margin:auto;
     margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    /*border: rgba(246, 246, 246) solid 1.5px;*/
-    box-shadow: 2px 2px 5px #C0C0C0;
-      &__etiquette{
-       position:absolute;
-       right:2rem;
-       top:60rem;    /*mais où est la deuxième div??*/
-       background-color: #99E2D0;
-       color: #00825f;
-       padding: 0.3rem 0.7rem; 
+
+     &__titre{
+      padding-left:1.3rem;
+      padding-top:2rem;
+   }
+     &__carte{   /*cartes menu ou laisser article sans classe??*/
+        background-color:white;
+        width:90%;
+        margin:auto;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        /*border: rgba(246, 246, 246) solid 1.5px;*/
+        box-shadow: 2px 2px 5px #C0C0C0;
     }
+        &__etiquette{
+         position:absolute;
+         right:2rem;
+         top:60rem;    /*mais où est la deuxième div??*/
+         background-color: $color-tertiary;
+         color: $dark-etiquette-color;
+         padding: 0.3rem 0.7rem; 
+      }
+          &__footer{
+            display: flex;
+            justify-content: space-between;
+        }
+            &__description{
+            padding:0.8rem 0rem 1rem 0.8rem;
+          } 
+             &__nom{
+              margin:0;
+              padding-bottom:0.3rem;
+            }
+               &__ville{
+                margin:0;
+              }
+  .fa-heart{
+    padding-right:2rem;
+    color: #5c5c5c;
+    padding-top: 1rem;
+    font-size: xx-large;
+  }            
 }
