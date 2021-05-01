@@ -1,7 +1,18 @@
 $font-family-logo: "shrikhand";
 $font-family-texte: "roboto";
-$color-lien: black;
+
+
+
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
-$color-tertiary:#99E2DO;
+$color-tertiary: #99E2D0;
+$dark-etiquette-color: darken($color-tertiary,35%);
 
+$color-background-grey:#F4F4F4;
+$color-background-footer: lighten(black,20%);
+$color-fonctionnement-hover:lighten($color-primary,35%);
+$color-input:#EAEAEA;
+$grey-texte:#7e7e7e;
+
+/*$color-button:linear-gradient(166deg, $color-secondary, $color-primary);
+$hover-button:lighten($color-button,20%);*/  

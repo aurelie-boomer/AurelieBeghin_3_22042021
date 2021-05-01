@@ -1,8 +1,9 @@
 
 header{
-    display:flex;
-    justify-content:center;
+    @include flex-center;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    background-color:blue;
+    background-color:white;
 }
+
+

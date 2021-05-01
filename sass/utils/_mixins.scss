@@ -1,0 +1,38 @@
+@mixin header{
+    @include flex-center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color:white;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin footer {
+    background-color: $color-background-footer;
+    color:white;
+    padding-bottom: 1.3rem;
+    &__titre{
+    font-family:$font-family-logo;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    margin:0;
+ }
+    &__liste{
+    padding-left:2rem;
+    line-height: 1.5rem;
+    color: white;
+ }
+    &__puce{
+    list-style-type: none;
+    }
+    &__logo{
+        color: white;
+        padding-left: 0.7rem;
+      }
+    &__lien{
+    color:white;
+    margin-left:0.5rem;
+ }
+    
+}

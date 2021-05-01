@@ -1,0 +1,15 @@
+form{
+    @include flex-center;
+    background-color: $color-input;
+    padding: 1rem 0 1rem 2rem;  
+}
+.fa-map-marker-alt{
+    margin-right:1.3rem;
+}
+input{
+    background-color: $color-input;
+    border:none;
+}
+.input::placeholder{
+    color: black;
+}

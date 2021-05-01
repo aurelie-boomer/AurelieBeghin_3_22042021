@@ -1,1 +1,62 @@
+.presentation{
+    background-color: $color-background-grey;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
 
+    &__titre{
+    font-weight:bold;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+    &__reservation{
+    color: $grey-texte;
+    margin-top: 0;
+}
+}
+
+
+.fonctionnement{
+    padding: 1.5rem 0.5rem 2rem 1.5rem;
+
+    &__titre{
+    margin-bottom:1rem;
+}
+    &__liste{
+    padding:0;
+    @include flex-center;
+    flex-direction:column;
+}
+    &__element{
+    @include flex-center;
+    align-items: center;
+    font-weight: bold;
+    background-color: $color-background-grey;
+    box-shadow: 2px 2px 5px $color-input;
+    border-radius: 1rem; 
+    margin:0.5rem 1rem 1rem 1rem;
+    padding:1.5rem 4rem 1.5rem 0rem;
+    &:hover{
+        background: $color-fonctionnement-hover;
+    }
+}
+    &__puce{
+    @include flex-center;
+    align-items: center;
+    position:absolute;
+    left:1.8rem;
+    margin-right:1.5rem;
+    background-color:$color-primary;
+    color:white;
+    font-size:small;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.3rem;
+}
+}
+ol .fas{
+    margin-right:1.5rem;
+    margin-left: 2rem;
+    color:$grey-texte;
+}
