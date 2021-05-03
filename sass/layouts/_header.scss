@@ -5,5 +5,20 @@ header{
     padding-bottom: 1rem;
     background-color:white;
 }
+.header{
+    display: flex;
+    align-items: center;
+
+    &__bloc{
+    display: flex;
+    align-items: center;
+ }
+    &__retour{
+    padding-right: 4rem;
+ }
+    &__image{
+    padding-right: 4rem;
+ }
+}
 
 
