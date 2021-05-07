@@ -14,6 +14,10 @@
     margin-top: 0;
 }
 }
+.button{
+    padding: 1rem;
+    margin:1rem 4.5rem 3.5rem 4.5rem; 
+}
 
 
 .fonctionnement{
@@ -59,4 +63,56 @@ ol .fas{
     margin-right:1.5rem;
     margin-left: 2rem;
     color:$grey-texte;
+}
+
+.restaurant{
+    background-color:$color-background-grey;
+
+     &__titre{
+      padding-left:1.3rem;
+      padding-top:2rem;
+   }
+     &__bloc{
+         @media screen {
+             
+         }
+     }
+     &__carte{  
+        background-color:white;
+        width:90%;
+        margin:auto;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px #C0C0C0;
+    }
+     &__image{
+        height: 14rem;
+        width: 100%;
+    }
+     &__etiquette{
+        
+        background-color: $color-tertiary;
+        color: $dark-etiquette-color;
+    }
+     &__footer{
+        display: flex;
+        justify-content: space-between;
+    }
+     &__description{
+        padding:0.8rem 0rem 1rem 0.8rem;
+    } 
+     &__nom{
+        margin:0;
+        padding-bottom:0.3rem;
+    }
+     &__ville{
+        margin:0;
+    }
+  .fa-heart{
+    padding-right:2rem;
+    color: #5c5c5c;
+    padding-top: 1rem;
+    font-size: xx-large;
+  }            
 }

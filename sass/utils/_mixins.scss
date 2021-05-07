@@ -8,6 +8,16 @@
     display: flex;
     justify-content: center;
 }
+@mixin button{        /*@mixin button($margin,$padding)*/
+    color: white;
+    background: linear-gradient(166deg, $color-secondary, $color-primary);
+    border: none;
+    border-radius: 1.6rem;
+    margin: 1rem 4.5rem 3.5rem 4.5rem; 
+    &:hover{
+        background:$hover-button;
+    }
+}
 @mixin footer {
     background-color: $color-background-footer;
     color:white;

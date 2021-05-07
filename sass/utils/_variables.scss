@@ -12,5 +12,10 @@ $color-fonctionnement-hover:lighten($color-primary,35%);
 $color-input:#EAEAEA;
 $grey-texte:#7e7e7e;
 
-/*$color-button:linear-gradient(166deg, $color-secondary, $color-primary);
-$hover-button:lighten($color-button,20%);*/  
+$color-button:linear-gradient(166deg, $color-secondary, $color-primary);
+$hover-button:linear-gradient(
+    166deg,
+    lighten($color-secondary,5%),
+    lighten($color-primary,5%)
+);
+ 
