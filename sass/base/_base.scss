@@ -2,6 +2,8 @@
 body{
     font-family: $font-family-texte;
     margin:0;
+    display: flex;
+    flex-direction: column;
 }
 img{
     max-width: 100%;

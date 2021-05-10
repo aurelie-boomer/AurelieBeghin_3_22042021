@@ -18,8 +18,6 @@
     padding: 1rem;
     margin:1rem 4.5rem 3.5rem 4.5rem; 
 }
-
-
 .fonctionnement{
     padding: 1.5rem 0.5rem 2rem 1.5rem;
 
@@ -43,6 +41,9 @@
     &:hover{
         background: $color-fonctionnement-hover;
     }
+    &:hover i {
+        color:$color-primary;
+    }
 }
     &__puce{
     @include flex-center;
@@ -58,13 +59,12 @@
     height: 1rem;
     padding: 0.3rem;
 }
-}
-ol .fas{
+    &__logo{
     margin-right:1.5rem;
     margin-left: 2rem;
-    color:$grey-texte;
+    color:$grey-texte; 
 }
-
+}
 .restaurant{
     background-color:$color-background-grey;
 
@@ -73,13 +73,12 @@ ol .fas{
       padding-top:2rem;
    }
      &__bloc{
-         @media screen {
-             
-         }
+         color: black;
      }
      &__carte{  
         background-color:white;
         width:90%;
+        position: relative;
         margin:auto;
         margin-bottom: 1.5rem;
         border-radius: 1rem;
@@ -91,7 +90,11 @@ ol .fas{
         width: 100%;
     }
      &__etiquette{
-        
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-weight: bold;
+        padding: 0.6rem;
         background-color: $color-tertiary;
         color: $dark-etiquette-color;
     }
@@ -115,4 +118,36 @@ ol .fas{
     padding-top: 1rem;
     font-size: xx-large;
   }            
+}
+
+@media screen and (min-width:600px) {
+    .restaurant__bloc{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .button{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+@media screen and (min-width:900px){
+    .button{
+        margin-left: 18rem;
+        margin-right: 18rem;
+    }
+    .fonctionnement__liste{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .fonctionnement__element{
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        white-space: nowrap;
+    }
+}
+@media screen and (min-width:1200px) {
+       body{
+        align-items: center;
+    }
 }

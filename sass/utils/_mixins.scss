@@ -16,6 +16,7 @@
     margin: 1rem 4.5rem 3.5rem 4.5rem; 
     &:hover{
         background:$hover-button;
+        box-shadow: 3px 6px #c3c3c3;
     }
 }
 @mixin footer {
@@ -36,13 +37,22 @@
     &__puce{
     list-style-type: none;
     }
-    &__logo{
-        color: white;
-        padding-left: 0.7rem;
+    &__logo1{
+        padding-right: 1rem; 
+      }
+      &__logo2{
+        padding-right: 0.5rem; 
       }
     &__lien{
     color:white;
-    margin-left:0.5rem;
  }
-    
+}
+@mixin flexbox ($justify, $aligns) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligns;
+}
+@mixin marges ($margin, $padding){
+    margin:$margin;
+    padding:$padding;
 }
