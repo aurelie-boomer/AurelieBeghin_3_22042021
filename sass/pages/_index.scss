@@ -20,6 +20,7 @@
 }
 .fonctionnement{
     padding: 1.5rem 0.5rem 2rem 1.5rem;
+    background-color: white;
 
     &__titre{
     margin-bottom:1rem;
@@ -31,6 +32,7 @@
 }
     &__element{
     @include flex-center;
+    position: relative;
     align-items: center;
     font-weight: bold;
     background-color: $color-background-grey;
@@ -49,8 +51,7 @@
     @include flex-center;
     align-items: center;
     position:absolute;
-    left:1.8rem;
-    margin-right:1.5rem;
+    left:-1rem;
     background-color:$color-primary;
     color:white;
     font-size:small;
@@ -73,7 +74,7 @@
       padding-top:2rem;
    }
      &__bloc{
-         color: black;
+         margin-bottom: 4rem;
      }
      &__carte{  
         background-color:white;
@@ -112,15 +113,33 @@
      &__ville{
         margin:0;
     }
-  .fa-heart{
+}           
+
+.heart-container{
+    position: relative;
+}
+.fa-heart{
     padding-right:2rem;
     color: #5c5c5c;
     padding-top: 1rem;
     font-size: xx-large;
-  }            
+    transition: opacity 500ms;
+    &:hover{
+        opacity: 0;
+    }
+  } 
+.fa-heart-full{
+    opacity: 0;
+    transition: opacity 500ms;
+    position: absolute;
+    left: 0;
+    &:hover{
+        opacity: 1;
+        color:$color-secondary;      
+    }
 }
 
-@media screen and (min-width:600px) {
+@include tablet {
     .restaurant__bloc{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -132,7 +151,7 @@
         margin-right: 10rem;
     }
 }
-@media screen and (min-width:900px){
+@include desktop{
     .button{
         margin-left: 18rem;
         margin-right: 18rem;
@@ -142,12 +161,13 @@
         justify-content: space-evenly;
     }
     .fonctionnement__element{
-        padding: 1.5rem 1rem 1.5rem 1rem;
+        padding: 1.5rem 2rem 1.5rem 1rem;
         white-space: nowrap;
     }
-}
-@media screen and (min-width:1200px) {
-       body{
-        align-items: center;
+    .restaurant__titre{
+        padding-left: 2.3rem;
+    }
+    footer{
+        @include flex-center;
     }
 }

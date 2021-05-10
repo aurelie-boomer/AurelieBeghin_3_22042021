@@ -8,27 +8,31 @@
     display: flex;
     justify-content: center;
 }
-@mixin button{        /*@mixin button($margin,$padding)*/
+@mixin button{        
     color: white;
     background: linear-gradient(166deg, $color-secondary, $color-primary);
     border: none;
     border-radius: 1.6rem;
     margin: 1rem 4.5rem 3.5rem 4.5rem; 
+    transition: all 500ms;
     &:hover{
-        background:$hover-button;
+        opacity: 0.8;
         box-shadow: 3px 6px #c3c3c3;
     }
 }
 @mixin footer {
-    background-color: $color-background-footer;
     color:white;
     padding-bottom: 1.3rem;
+    max-width: 1000px;
+    a{
+        color: white;
+    }
     &__titre{
     font-family:$font-family-logo;
     padding-left: 2rem;
     padding-top: 1.5rem;
     margin:0;
- }
+    }
     &__liste{
     padding-left:2rem;
     line-height: 1.5rem;
@@ -47,12 +51,14 @@
     color:white;
  }
 }
-@mixin flexbox ($justify, $aligns) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $aligns;
+@mixin tablet {
+    @media (min-width:$tablet-breakpoints){
+        @content;
+    } 
 }
-@mixin marges ($margin, $padding){
-    margin:$margin;
-    padding:$padding;
+@mixin desktop {
+    @media (min-width:$desktop-breakpoints){
+        @content;
+    }
+    
 }

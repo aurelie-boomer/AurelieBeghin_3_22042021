@@ -18,4 +18,8 @@ $hover-button:linear-gradient(
     lighten($color-secondary,5%),
     lighten($color-primary,5%)
 );
+
+$tablet-breakpoints:600px;
+$desktop-breakpoints:900px;
+$large-screen-breakpoints:1200px
  

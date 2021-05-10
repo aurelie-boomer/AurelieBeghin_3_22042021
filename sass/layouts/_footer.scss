@@ -1,4 +1,10 @@
 .footer{
     @include footer;
 }
+footer{
+    width: 100%;
+    max-width: 1440px;
+    background-color: $color-background-footer;
+
+}
 
