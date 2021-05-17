@@ -58,6 +58,21 @@
     }
 }
 
+.menu__apparition{
+  animation:apparition .2s ease-in-out;
+  animation-fill-mode:both;
+}
+.menu__delay-1{
+  animation-delay: 0s;
+
+}
+.menu__delay-2{
+  animation-delay: 100ms;
+}
+.menu__delay-3{
+  animation-delay: 200ms;
+}
+
 @keyframes apparition {
   0% {
     transform: scale(0);
