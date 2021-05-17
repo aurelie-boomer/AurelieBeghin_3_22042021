@@ -11,6 +11,13 @@
     <title>La palette du goût</title>
 </head>
 <body>
+    <div class="loading">
+        <div class="loading__bloc">
+            <div class="loading__ball loading__ball1"></div>
+            <div class="loading__ball loading__ball2"></div>
+            <div class="loading__ball loading__ball3"></div>
+        </div>  
+    </div>
     <header>
         <div class="header">
             <div class="header__retour">
@@ -38,7 +45,7 @@
                  </div>
           </div>
           <div class="menu">
-             <article>
+             <article class="menu__entrees">
                   <h2 class="menu__titre"><span class="menu__underline">entr</span>ées</h2>
                   <ul class="menu__liste">
                     <li class="menu__puce">
@@ -47,7 +54,10 @@
                             <div class="menu__description">
                               <p class="menu__texte">Au piment d'Espelette </p>
                             </div>
+                            <div class="menu__footer">
                             <div class="menu__prix">25€</div>
+                            <div class="menu__check"> <i class="fas fa-check-circle check"></i></div>
+                            </div>
                         </div>
                     </li>
                     <li class="menu__puce">
@@ -70,7 +80,7 @@
                     </li>
                  </ul>
              </article>
-             <article>
+             <article class="menu__plats">
                 <h2 class="menu__titre"><span class="menu__underline">plat</span>s</h2>
                 <ul class="menu__liste">
                     <li class="menu__puce">
@@ -102,7 +112,7 @@
                     </li>
                 </ul>
              </article>
-             <article>
+             <article class="menu__desserts">
                 <h2 class="menu__titre"><span class="menu__underline">dess</span>erts</h2>
                 <ul class="menu__liste">
                     <li class="menu__puce">
@@ -146,10 +156,12 @@
             <h3 class="footer__titre">ohmyfood</h3>
             <ul class="footer__liste">
                 <li class="footer__puce">
-                    <i class="fas fa-utensils"></i><a class="footer__logo" href="">Proposer un restaurant</a>
+                    <i class="fas fa-utensils footer__logo1"></i>
+                    <a class="footer__lien" href="">Proposer un restaurant</a>
                 </li>
                 <li class="footer__puce">
-                    <i class="fas fa-hands-helping"></i><a class="footer__logo" href="">Devenir partenaire</a>
+                    <i class="fas fa-hands-helping footer__logo2"></i>
+                    <a class="footer__lien" href="">Devenir partenaire</a>
                 </li>
                 <li class="footer__puce">
                     <a class="footer__lien" href="">Mentions légales</a>

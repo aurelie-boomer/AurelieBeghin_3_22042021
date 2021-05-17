@@ -11,6 +11,7 @@ $color-background-footer: lighten(black,20%);
 $color-fonctionnement-hover:lighten($color-primary,35%);
 $color-input:#EAEAEA;
 $grey-texte:#7e7e7e;
+$box-shadow:#C0C0C0;
 
 $color-button:linear-gradient(166deg, $color-secondary, $color-primary);
 $hover-button:linear-gradient(
@@ -20,6 +21,6 @@ $hover-button:linear-gradient(
 );
 
 $tablet-breakpoints:600px;
-$desktop-breakpoints:900px;
+$desktop-breakpoints:1000px;
 $large-screen-breakpoints:1200px
  

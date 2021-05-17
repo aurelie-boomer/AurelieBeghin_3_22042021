@@ -1,3 +1,4 @@
+
 .presentation{
     background-color: $color-background-grey;
     display:flex;
@@ -84,7 +85,7 @@
         margin-bottom: 1.5rem;
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 2px 2px 5px #C0C0C0;
+        box-shadow: 2px 2px 5px $box-shadow;
     }
      &__image{
         height: 14rem;

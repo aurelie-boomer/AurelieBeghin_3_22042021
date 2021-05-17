@@ -17,7 +17,7 @@
     transition: all 500ms;
     &:hover{
         opacity: 0.8;
-        box-shadow: 3px 6px #c3c3c3;
+        box-shadow: 2px 2px  $box-shadow ;
     }
 }
 @mixin footer {
@@ -58,6 +58,12 @@
 }
 @mixin desktop {
     @media (min-width:$desktop-breakpoints){
+        @content;
+    }
+    
+}
+@mixin large-screen {
+    @media (min-width:$large-screen-breakpoints){
         @content;
     }
     
