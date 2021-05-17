@@ -1,70 +1,73 @@
-@mixin header{
-    @include flex-center;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    background-color:white;
+@mixin header {
+  @include flex-center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: white;
 }
-@mixin flex-center{
-    display: flex;
-    justify-content: center;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
 }
-@mixin button{        
-    color: white;
-    background: linear-gradient(166deg, $color-secondary, $color-primary);
-    border: none;
-    border-radius: 1.6rem;
-    margin: 1rem 4.5rem 3.5rem 4.5rem; 
-    transition: all 500ms;
-    &:hover{
-        opacity: 0.8;
-        box-shadow: 2px 2px  $box-shadow ;
-    }
+@mixin cache {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin button {
+  color: white;
+  background: linear-gradient(166deg, $color-secondary, $color-primary);
+  border: none;
+  border-radius: 1.6rem;
+  margin: 1rem 4.5rem 3.5rem 4.5rem;
+  transition: all 500ms;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px $box-shadow;
+  }
 }
 @mixin footer {
-    color:white;
-    padding-bottom: 1.3rem;
-    max-width: 1000px;
-    a{
-        color: white;
-    }
-    &__titre{
-    font-family:$font-family-logo;
+  color: white;
+  padding-bottom: 1.3rem;
+  max-width: 1000px;
+  a {
+    color: white;
+  }
+  &__titre {
+    font-family: $font-family-logo;
     padding-left: 2rem;
     padding-top: 1.5rem;
-    margin:0;
-    }
-    &__liste{
-    padding-left:2rem;
+    margin: 0;
+  }
+  &__liste {
+    padding-left: 2rem;
     line-height: 1.5rem;
     color: white;
- }
-    &__puce{
+  }
+  &__puce {
     list-style-type: none;
-    }
-    &__logo1{
-        padding-right: 1rem; 
-      }
-      &__logo2{
-        padding-right: 0.5rem; 
-      }
-    &__lien{
-    color:white;
- }
+  }
+  &__logo1 {
+    padding-right: 1rem;
+  }
+  &__logo2 {
+    padding-right: 0.5rem;
+  }
+  &__lien {
+    color: white;
+  }
 }
 @mixin tablet {
-    @media (min-width:$tablet-breakpoints){
-        @content;
-    } 
+  @media (min-width: $tablet-breakpoints) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media (min-width:$desktop-breakpoints){
-        @content;
-    }
-    
+  @media (min-width: $desktop-breakpoints) {
+    @content;
+  }
 }
 @mixin large-screen {
-    @media (min-width:$large-screen-breakpoints){
-        @content;
-    }
-    
+  @media (min-width: $large-screen-breakpoints) {
+    @content;
+  }
 }
