@@ -42,6 +42,7 @@
     padding: 1.5rem 4rem 1.5rem 0rem;
     &:hover {
       background: $color-fonctionnement-hover;
+      cursor: pointer;
     }
     &:hover i {
       color: $color-primary;

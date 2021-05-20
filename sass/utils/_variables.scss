@@ -1,26 +1,25 @@
 $font-family-logo: "shrikhand";
 $font-family-texte: "roboto";
 
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary: #99E2D0;
-$dark-etiquette-color: darken($color-tertiary,35%);
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$dark-etiquette-color: darken($color-tertiary, 35%);
 
-$color-background-grey:#F4F4F4;
-$color-background-footer: lighten(black,20%);
-$color-fonctionnement-hover:lighten($color-primary,35%);
-$color-input:#EAEAEA;
-$grey-texte:#7e7e7e;
-$box-shadow:#C0C0C0;
+$color-background-grey: #f4f4f4;
+$color-background-footer: lighten(black, 20%);
+$color-fonctionnement-hover: lighten($color-primary, 35%);
+$color-input: #eaeaea;
+$grey-texte: #7e7e7e;
+$box-shadow: #bebcbc;
 
-$color-button:linear-gradient(166deg, $color-secondary, $color-primary);
-$hover-button:linear-gradient(
-    166deg,
-    lighten($color-secondary,5%),
-    lighten($color-primary,5%)
+$color-button: linear-gradient(166deg, $color-secondary, $color-primary);
+$hover-button: linear-gradient(
+  166deg,
+  lighten($color-secondary, 5%),
+  lighten($color-primary, 5%)
 );
 
-$tablet-breakpoints:600px;
-$desktop-breakpoints:1000px;
-$large-screen-breakpoints:1200px
- 
+$tablet-breakpoints: 600px;
+$desktop-breakpoints: 1000px;
+$large-screen-breakpoints: 1200px;

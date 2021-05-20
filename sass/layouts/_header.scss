@@ -1,25 +1,19 @@
-
-header{
-    @include flex-center;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    background-color:white;
-    max-width: 100%;
+header {
+  @include header;
+  max-width: 100%;
 }
-.header{
+.header {
+  display: flex;
+  align-items: center;
+
+  &__bloc {
     display: flex;
     align-items: center;
-
-    &__bloc{
-    display: flex;
-    align-items: center;
- }
-    &__retour{
+  }
+  &__retour {
     padding-right: 4rem;
- }
-    &__image{
+  }
+  &__image {
     padding-right: 4rem;
- }
+  }
 }
-
-
