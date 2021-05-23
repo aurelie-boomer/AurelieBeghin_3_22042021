@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/aurelie-boomer/AurelieBeghin_3_22042021/issues"
   },
-  "homepage": "https://github.com/aurelie-boomer/AurelieBeghin_3_22042021#readme"
+  "homepage": "https://github.com/aurelie-boomer/AurelieBeghin_3_22042021#readme",
+  "browserslist":"last 4 versions"
 }
 

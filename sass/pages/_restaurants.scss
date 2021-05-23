@@ -51,6 +51,7 @@
     padding-right: 0.7rem;
   }
   &__apparition {
+    /*Apparition menu*/
     animation: apparition 0.2s ease-in-out;
     animation-fill-mode: both;
   }
@@ -62,10 +63,10 @@
     padding-left: 1rem;
     line-height: 1.5rem;
     overflow: hidden;
-    box-shadow: $box-shadow;
     display: grid;
     grid-template-columns: auto min-content;
     &:hover {
+      /*Checkbox*/
       .menu__check {
         width: 4rem;
         .check {
@@ -101,6 +102,7 @@
     font-weight: bold;
   }
   &__check {
+    /*checkbox*/
     background-color: $color-tertiary;
     transition: width 0.2s;
     @include flex-center;
@@ -126,6 +128,7 @@
 }
 
 @include tablet {
+  /*responsive*/
   .menu__prix {
     text-align: center;
   }

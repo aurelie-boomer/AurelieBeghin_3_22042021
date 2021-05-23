@@ -1,4 +1,5 @@
 @keyframes loader {
+  /*Animation chargement*/
   100% {
     opacity: 0;
     z-index: -1;
@@ -19,7 +20,9 @@
     transform: translateY(0);
   }
 }
+
 @for $i from 1 through 4 {
+  /*Animation menu*/
   .menu__puce:nth-child(#{$i}) {
     animation-delay: #{$i * 0.3}s;
   }
