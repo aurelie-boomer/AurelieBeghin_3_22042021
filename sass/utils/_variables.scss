@@ -4,22 +4,19 @@ $font-family-texte: "roboto";
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+
 $dark-etiquette-color: darken($color-tertiary, 35%);
 
 $color-background-grey: #f4f4f4;
 $color-background-footer: lighten(black, 20%);
+
 $color-fonctionnement-hover: lighten($color-primary, 35%);
 $color-input: #eaeaea;
 $grey-texte: #7e7e7e;
 $box-shadow: #bebcbc;
 
 $color-button: linear-gradient(166deg, $color-secondary, $color-primary);
-$hover-button: linear-gradient(
-  166deg,
-  lighten($color-secondary, 5%),
-  lighten($color-primary, 5%)
-);
 
 $tablet-breakpoints: 600px;
-$desktop-breakpoints: 1300px;
-$large-screen-breakpoints: 1301px;
+$desktop-breakpoints: 1200px;
+$large-screen-breakpoints: 1450px;

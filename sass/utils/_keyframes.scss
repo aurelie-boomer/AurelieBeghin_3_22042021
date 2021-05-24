@@ -29,11 +29,11 @@
 }
 
 @keyframes apparition {
-  0% {
+  from {
     transform: translateY(10px);
     opacity: 0%;
   }
-  100% {
+  to {
     transform: translateY(0px);
     opacity: 100%;
   }
