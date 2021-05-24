@@ -83,6 +83,7 @@
   &__plat {
     margin: 0;
     @include cache;
+    width: 80%;
   }
   &__bloc {
     display: grid;
